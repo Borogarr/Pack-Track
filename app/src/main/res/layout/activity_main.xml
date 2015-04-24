@@ -5,16 +5,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNewPack"
+        android:hint="Enter Package Number"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/btnAddPack"
+        android:layout_toStartOf="@id/btnAddPack"
+    />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Package"
         android:id="@+id/btnAddPack"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:onClick="onAddPack"
     />
 
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvPacks"
+        android:layout_alignBaseline="@id/btnAddPack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+    />
 
 </RelativeLayout>
