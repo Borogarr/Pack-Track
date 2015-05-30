@@ -13,8 +13,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@id/btnAddPack"
-        android:layout_toStartOf="@id/btnAddPack"
     />
 
     <Button
@@ -25,6 +23,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/etNewPack"
+        android:layout_toEndOf="@id/etNewPack"
         android:onClick="onAddPack"
     />
 
@@ -33,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lvPacks"
-        android:layout_alignBaseline="@id/btnAddPack"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:autoLink="web"
+        android:layout_below="@+id/btnAddPack"
+
 
     />
 
